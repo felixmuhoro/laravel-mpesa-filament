@@ -26,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            "FelixMuhoro\MpesaFilament\\": "src/"
+            "FelixMuhoro\\\\MpesaFilament\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FelixMuhoro\MpesaFilament\Tests\\": "tests/"
+            "FelixMuhoro\\\\MpesaFilament\\\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "FelixMuhoro\MpesaFilament\MpesaFilamentServiceProvider"
+                "FelixMuhoro\\\\MpesaFilament\\\\MpesaFilamentServiceProvider"
             ]
         }
     },
