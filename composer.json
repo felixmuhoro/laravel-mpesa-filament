@@ -1,35 +1,49 @@
 {
     "name": "felixmuhoro/laravel-mpesa-filament",
-    "description": "Filament plugin for M-Pesa transactions",
-    "keywords": [
-        "laravel",
-        "mpesa",
-        "kenya",
-        "safaricom"
-    ],
+    "description": "A Filament v3 admin panel plugin for managing M-Pesa transactions",
+    "keywords": ["laravel", "filament", "mpesa", "m-pesa", "kenya", "payments"],
     "homepage": "https://github.com/felixmuhoro/laravel-mpesa-filament",
     "license": "MIT",
-    "type": "library",
     "authors": [
         {
             "name": "Felix Muhoro",
             "email": "hi@felixmuhoro.dev",
-            "role": "Developer"
+            "homepage": "https://felixmuhoro.dev"
         }
     ],
     "require": {
         "php": "^8.1",
         "felixmuhoro/laravel-mpesa": "^1.2",
-        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+        "filament/filament": "^3.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.15"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-4": {
-            "FelixMuhoro\\": "src/"
+            "FelixMuhoro\MpesaFilament\\": "src/"
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "suggest": {
-        "felixmuhoro/laravel-mpesa": "Core M-Pesa Daraja 2.0 integration"
-    }
+    "autoload-dev": {
+        "psr-4": {
+            "FelixMuhoro\MpesaFilament\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FelixMuhoro\MpesaFilament\MpesaFilamentServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
