@@ -1,7 +1,14 @@
 {
     "name": "felixmuhoro/laravel-mpesa-filament",
     "description": "A Filament v3 admin panel plugin for managing M-Pesa transactions",
-    "keywords": ["laravel", "filament", "mpesa", "m-pesa", "kenya", "payments"],
+    "keywords": [
+        "laravel",
+        "filament",
+        "mpesa",
+        "m-pesa",
+        "kenya",
+        "payments"
+    ],
     "homepage": "https://github.com/felixmuhoro/laravel-mpesa-filament",
     "license": "MIT",
     "authors": [
@@ -26,18 +33,18 @@
     },
     "autoload": {
         "psr-4": {
-            "FelixMuhoro\\\\MpesaFilament\\": "src/"
+            "FelixMuhoro\\MpesaFilament\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FelixMuhoro\\\\MpesaFilament\\\\Tests\\": "tests/"
+            "FelixMuhoro\\MpesaFilament\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "FelixMuhoro\\\\MpesaFilament\\\\MpesaFilamentServiceProvider"
+                "FelixMuhoro\\MpesaFilament\\MpesaFilamentServiceProvider"
             ]
         }
     },
